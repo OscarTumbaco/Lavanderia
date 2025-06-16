@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LavanApp - Sistema de Lavandería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-primary text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <span class="text-3xl">🧺</span>
+                    <h1 class="text-2xl font-bold">LavanApp</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link active text-white hover:text-purple-200">Inicio</a>
+                    <a href="login.html" class="nav-link text-white hover:text-purple-200">Login</a>
+                    <a href="dashboard.html" class="nav-link text-white hover:text-purple-200">Dashboard</a>
+                    <a href="#" class="nav-link text-white hover:text-purple-200">Contacto</a>
+                </nav>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 animate-fadeIn">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6 animate-slideInLeft">
+                Gestiona tu Lavandería con Eficiencia
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-slideInRight">
+                Sistema completo para administrar pedidos, clientes y servicios de tu lavandería. 
+                Optimiza tu negocio con nuestras herramientas digitales.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fadeIn">
+                <a href="login.html" class="btn-primary inline-block">
+                    Iniciar Sesión
+                </a>
+                <a href="login.html#register" class="btn-secondary inline-block">
+                    Crear Cuenta
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
