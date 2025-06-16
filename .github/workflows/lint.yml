@@ -1,0 +1,23 @@
+name: Node Lint
+run-name: Run ESLint checks
+on: [push]
+
+jobs:
+  lint:
+    runs-on: [self-hosted] 
+    steps:
+      - name: Descargar el repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+
+      - name: Instalar dependencias
+        working-directory: ./lavanderia
+        run: npm install
+
+      - name: Ejecutar ESLint
+        working-directory: ./lavanderia
+        run: npm run lint  

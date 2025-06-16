@@ -1,0 +1,23 @@
+name: Node Tests
+run-name: Run unit tests
+on: [push]
+
+jobs:
+  test:
+    runs-on: [self-hosted] 
+    steps:
+      - name: Descargar el repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+
+      - name: Instalar dependencias
+        working-directory: ./lavanderia
+        run: npm install
+
+      - name: Ejecutar tests
+        working-directory: ./lavanderia
+        run: npm test  
