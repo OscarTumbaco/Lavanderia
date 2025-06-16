@@ -16,5 +16,5 @@ COPY dist ./
 # Exponer el puerto en el que corre la aplicación
 EXPOSE 3000
  
-# Comando para ejecutar la aplicación
+# Comando para ejecutar la aplicación.
 CMD ["node", "main.js"]
